@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 01 Formularios</title>
+	<style type="text/css">
+		input:focus{
+			outline: none;
+			border-radius: 5px;
+			border:red 2px solid;
+
+		}
+		input{
+			border:blue 2px solid;
+			border-radius: 5px;
+			transition: border 0.5s;
+		}
+		select:focus{
+			background-color: skyblue;
+		}
+
+	</style>
+</head>
+<body>
+	<label for = "nombre">Nombre</label>
+	<input type="text" name="nombre" id="nombre" autofocus="nombre">
+	<label for = "apellidos">Apellidos</label>
+	<input type="text" name="apellidos" id="apellidos">
+	<label for="Edad">Edad</label>
+	<input type="number" name="edad" id="edad">
+	<label for = "email">Email</label>
+	<input type="text" name="email" id="email" placeholder="example@gmail.com">
+	<label for="nav">Navegador favorito</label></body><br>
+	<input type="radio" name="nav" value ="M">Mozilla Firefox<br>
+	<input type="radio" name="nav" value ="G">Google Chrome<br>
+	<input type="radio" name="nav" value ="E">Microsoft Edge<br>
+
+</body>
+</html>

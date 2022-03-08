@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios</title>
+</head>
+<body>
+	<label for="genero">Géneros</label></body><br>
+	<input type="radio" name="genero" value ="M">Masculino<br>
+	<input type="radio" name="genero" value ="F">Femenino<br>
+	<input type="radio" name="genero" value ="O">Otro<br>
+</body>
+</html>
