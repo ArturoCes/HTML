@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+    <script>
+        let arrayTam = prompt("Diga usted un tamaño para el array");
+
+        let numeros = [];
+        let cont = new Number();
+        let x = new Number();
+        let y = 0;
+        let suma=0;
+        let numero=0    ;
+        operacion();
+
+
+        function operacion() {
+
+            for (i = 0; i < arrayTam; i++) {
+                x = prompt("Ingresa tu número");
+                    numeros.push(x);
+                    cont += numeros[i];
+                    alert(numeros);
+                for(let i = 0; i < arrayTam; i++){
+                     numero = numeros[i];
+                     suma+=numero;
+            }
+            alert(suma);
+
+            do {
+                y = prompt("Ingresa tu número");
+                if (y >= 0) {
+                    cont.shift();
+                    for (i = 0; i < arrayTam; i++) {
+                        cont += numeros[i];
+
+                    }
+
+
+                }
+            } while (y >= 0);
+
+        }
+        alert("Su numero es " + cont);
+    }
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

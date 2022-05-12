@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript</title>
+    <script>
+        alert("Esto es un JavaScript")
+    </script>
+    <script src="js/MisScript.js"></script>
+    <script>
+        //<input type="submit" name="enviar" value="Pinchame" onlyclick="alert ('¡Me HAN PINCHADO!')">
+
+        //Let variable = (loquesea!=0)?3:0;    
+        //let variable = (loquesea!=0)?3:0;
+
+        let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+       
+        let incorrecto;
+        do{
+      
+            let dni = prompt("Por favor, introduzca el número de DNI (sin letra)");
+            let letradni = prompt("Por favor, indique la letra del DNI").toUpperCase();
+
+
+            let mens= comprobarLetraDNI (num,letra);
+            alert(mens);
+            incorrecto = mens!=="Su letra es correcta";
+        }while (incorrecto);
+
+        function comprobarLetraDNI (dni,letradni){
+            let mensaje;
+            if (dni >= 0 && dni <= 99999999) {
+                   //num correcto
+                   if (letradni.length == 1 && letras.includes(letradni)) {
+                let resto = dni % 23;
+                let letraCalculada = letras[resto];
+                if (letraCalculada == letradni) {
+                    alert("Su letra es correcta");
+                } else {
+                    alert("Ha introducido una letra incorrecta");
+                }
+            }
+        } else {
+            alert("Por favor, introduzca un número valido")
+        }
+        }
+            
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
